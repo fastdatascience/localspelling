@@ -18,14 +18,11 @@ class TestAggItemCounts(unittest.TestCase):
         self.assertEqual("honour", convert_spelling("honour", "gb"))
 
     def test_single_word_case_conserved(self):
-        self.assertEqual("it is of a good Caliber blah blah centre potato",
+        self.assertEqual("it is of a good Caliber blah blah center potato",
                          convert_spelling("it is of a good Calibre blah blah centre potato", "us"))
 
     def test_single_word_case_conserved_all_caps(self):
-        self.assertEqual("i was MANOEUVERING down the road", convert_spelling("i was MANOEUVRING down the road", "us"))
-
-    def test_single_word_case_conserved_all_caps(self):
-        self.assertEqual("i was MANOEUVERING down the road", convert_spelling("i was MANOEUVRING down the road", "us"))
+        self.assertEqual("i was MANEUVERING down the road", convert_spelling("i was MANOEUVRING down the road", "us"))
 
     def test_converting_short_word(self):
         self.assertEqual("an eon", convert_spelling("an aeon", "us"))
@@ -34,7 +31,10 @@ class TestAggItemCounts(unittest.TestCase):
         self.assertEqual("a xaeon", convert_spelling("a xaeon", "us"))
 
     def test_converting_labor_without_suffix(self):
-        self.assertEqual("it was labor ", convert_spelling("it was labor ", "gb"))
+        self.assertEqual("it was labour ", convert_spelling("it was labor ", "gb"))
 
     def test_not_doing_laborious_with_suffix(self):
         self.assertEqual("it was laborious ", convert_spelling("it was laborious ", "gb"))
+
+    def test_nonexistent_suffix(self):
+        self.assertEqual("potatoficisation sdfsdf", convert_spelling("potatoficization sdfsdf", "gb"))

@@ -1,5 +1,6 @@
 import re
 
+
 def get_regex_and_raw_word(term):
     clean_term = re.sub(r'\*', '', term)
     regex = clean_term
@@ -24,9 +25,9 @@ def get_lookup_dictionaries(resource_file):
         gb_to_us[gb_word] = us_word
         us_to_gb[us_word] = gb_word
 
-    gb_regex = re.compile("(?i)" + "|".join([r'\b' + w + r'\b' for w in gb_regexes]))
-    us_regex = re.compile("(?i)" + "|".join([r'\b' + w + r'\b' for w in us_regexes]))
+    gb_regex = re.compile("(?i)" + "|".join(gb_regexes))
+    us_regex = re.compile("(?i)" + "|".join(us_regexes))
 
-    lookups = {"us":(gb_regex, gb_to_us), "gb":(us_regex, us_to_gb)}
+    lookups = {"us": (gb_regex, gb_to_us), "gb": (us_regex, us_to_gb)}
 
     return lookups

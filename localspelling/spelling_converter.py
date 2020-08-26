@@ -34,7 +34,6 @@ def convert_spelling(test_text: str, target_locale: str) -> str:
     output = ""
     last_index = 0
     for m in regex_lookup.finditer(test_text):
-
         word = m.group(0)
         lookup = word.lower()
 
