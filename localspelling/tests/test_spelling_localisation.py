@@ -38,3 +38,14 @@ class TestAggItemCounts(unittest.TestCase):
 
     def test_nonexistent_suffix(self):
         self.assertEqual("potatoficisation sdfsdf", convert_spelling("potatoficization sdfsdf", "gb"))
+
+    '''
+    def test_ambiguous_to_unambiguous(self):
+        self.assertEqual("a new program blah", convert_spelling("a new program blah", "gb"))
+
+    def test_ambiguous_to_ambiguous(self):
+        self.assertEqual("a new programme blah", convert_spelling("a new programme blah", "gb"))
+
+    def test_unambiguous_to_ambiguous(self):
+        self.assertEqual("a new program blah", convert_spelling("a new programme blah", "us"))
+    '''
