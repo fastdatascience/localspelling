@@ -495,7 +495,6 @@ ionised	ionized
 ionise	ionize
 ionising	ionizing
 *isation	*ization
-*ising	*izing
 italicised	italicized
 itemisation	itemization
 itemised	itemized
@@ -723,9 +722,6 @@ polarising	polarizing
 popularisation	popularization
 popularised	popularized
 prioritise	prioritize
-prised	prized
-prise	prize
-prising	prizing
 publicised	publicized
 publicise	publicize
 publicising	publicizing
@@ -1006,4 +1002,3 @@ fulfil	fulfill
 mum	mom
 titbit	tidbit
 titbits	tidbits
-aluminium	aluminum
