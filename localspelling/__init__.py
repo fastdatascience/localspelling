@@ -1,0 +1,1 @@
+from localspelling.spelling_converter import convert_spelling
