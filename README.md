@@ -2,6 +2,8 @@
 
 Developed by Fast Data Science, https://fastdatascience.com
 
+Source code at https://github.com/fastdatascience/localspelling
+
 Python library for localising spelling between British and American conventions, conserving case.
 
 Please note this library converts only spelling variants such as US "honour" vs UK "honor".
@@ -24,6 +26,7 @@ pip install localspelling
 
 ```
 from localspelling import convert_spelling
+
 convert_spelling("it has been an honor", "gb")
 ```
 
@@ -32,7 +35,6 @@ outputs
 ```
 'it has been an honour'
 ```
-
 
 # Who to contact
 
