@@ -1,14 +1,7 @@
-import importlib.resources as pkg_resources
-
+from localspelling.gb_us import DICTIONARY
 from localspelling.util import get_lookup_dictionaries
 
-if __package__ is not None:
-    resource_file = pkg_resources.read_text(__package__, 'gb_us.txt', encoding="utf-8")
-else:
-    with open("gb_us.txt", "r", encoding="utf-8") as f:
-        resource_file = f.read()
-
-lookups = get_lookup_dictionaries(resource_file)
+lookups = get_lookup_dictionaries(DICTIONARY)
 
 
 def convert_spelling(test_text: str, target_locale: str) -> str:
@@ -25,6 +18,9 @@ def convert_spelling(test_text: str, target_locale: str) -> str:
     :param target_locale: The alpha-2 code for the target locale. "us" or "gb".
     :return: The text localised to the target locale
     """
+    if type(target_locale) is not str:
+        raise Exception("Provide locale as string")
+    target_locale = target_locale.lower()
     if target_locale not in lookups:
         raise Exception("Unknown locale " + str(target_locale))
 

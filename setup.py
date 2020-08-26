@@ -6,7 +6,7 @@ with open("README.rst", "r") as fh:
 setup(
   name = 'localspelling',
   packages = ['localspelling'],
-  version = '0.9',
+  version = '0.92',
   license='MIT', 
   description = 'Translates input between UK and US spelling',
   long_description=long_description,

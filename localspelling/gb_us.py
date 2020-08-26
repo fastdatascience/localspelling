@@ -1,4 +1,4 @@
-acclimatisation	acclimatization
+DICTIONARY = '''acclimatisation	acclimatization
 acclimatise	acclimatize
 acclimatised	acclimatized
 acclimatising	acclimatizing
@@ -1001,4 +1001,4 @@ skulduggery	skullduggery
 fulfil	fulfill
 mum	mom
 titbit	tidbit
-titbits	tidbits
+titbits	tidbits'''
