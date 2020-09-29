@@ -24,6 +24,8 @@ pip install localspelling
 
 # Usage examples
 
+Example 1
+
 ```
 from localspelling import convert_spelling
 
@@ -35,6 +37,21 @@ outputs
 ```
 'it has been an honour'
 ```
+
+Example 2: you can retrieve the dictionary used for the single words (this won't match wildcards like '-isation')
+
+```
+from localspelling import get_dictionary
+
+get_dictionary("us")["honour"]
+```
+
+outputs
+
+```
+'honor'
+```
+
 
 # Who to contact
 

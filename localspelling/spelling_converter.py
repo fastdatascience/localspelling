@@ -4,6 +4,15 @@ from localspelling.util import get_lookup_dictionaries
 lookups = get_lookup_dictionaries(DICTIONARY)
 
 
+def get_dictionary(target_locale: str) -> dict:
+    if type(target_locale) is not str:
+        raise Exception("Provide locale as string")
+    target_locale = target_locale.lower()
+    if target_locale not in lookups:
+        raise Exception("Unknown locale " + str(target_locale))
+    return lookups[target_locale][1]
+
+
 def convert_spelling(test_text: str, target_locale: str) -> str:
     """
     Localises a string to British or American spelling, conserving case.

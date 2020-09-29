@@ -3,7 +3,7 @@ import unittest
 from localspelling.spelling_converter import convert_spelling
 
 
-class TestAggItemCounts(unittest.TestCase):
+class TestSpellingLocalisation(unittest.TestCase):
 
     def test_no_change(self):
         self.assertEqual("the", convert_spelling("the", "gb"))
