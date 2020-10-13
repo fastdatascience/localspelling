@@ -143,6 +143,7 @@ centralise	centralize
 centralised	centralized
 centralising	centralizing
 centre	center
+centres	centers
 channelled	channeled
 channelling	channeling
 characterisation	characterization
