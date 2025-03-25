@@ -12,6 +12,12 @@
 
 # Local spelling
 
+Install from [Pypi](https://pypi.org/project/localspelling/):
+
+```
+pip install localspelling
+```
+
 Developed by Fast Data Science, https://fastdatascience.com
 
 Source code at https://github.com/fastdatascience/localspelling
